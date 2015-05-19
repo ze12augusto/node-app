@@ -1,0 +1,15 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "API de teste",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielfs/node-api.git"
+  },
+  "author": "Daniel Fernandes Silva",
+  "bugs": {
+    "url": "https://github.com/danielfs/node-api/issues"
+  },
+  "homepage": "https://github.com/danielfs/node-api"
+}
