@@ -24,7 +24,7 @@ module.exports = function() {
 				},
 				
 				somar: function(numero1, numero2) {
-					return numero1 + numero2;
+					return numero2 + numero1;
 				},
 				
 				subtrair: function(numero1, numero2) {
