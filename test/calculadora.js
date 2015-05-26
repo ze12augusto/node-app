@@ -45,45 +45,7 @@ describe('Calculadora', function() {
 		});
 		
 		describe('Subtrair', function() {
-			it('Deveria retornar -3 quando for passado 1 e 4.', function() {
-				var numero1 = 1;
-				var numero2 = 4;
-				
-				var resultado = controller.utils.calculos.subtrair(numero1, numero2);
-				
-				resultado.should.be.a.Number;
-				resultado.should.be.equal(-3);
-			});
 			
-			it('Deveria retornar 5 quando for passado 1 e -4.', function() {
-				var numero1 = 1;
-				var numero2 = -4;
-				
-				var resultado = controller.utils.calculos.subtrair(numero1, numero2);
-				
-				resultado.should.be.a.Number;
-				resultado.should.be.equal(5);
-			});
-			
-			it('Deveria retornar -5 quando for passado -1 e 4.', function() {
-				var numero1 = -1;
-				var numero2 = 4;
-				
-				var resultado = controller.utils.calculos.subtrair(numero1, numero2);
-				
-				resultado.should.be.a.Number;
-				resultado.should.be.equal(-5);
-			});
-			
-			it('Deveria retornar 3 quando for passado -1 e -4.', function() {
-				var numero1 = -1;
-				var numero2 = -4;
-				
-				var resultado = controller.utils.calculos.subtrair(numero1, numero2);
-				
-				resultado.should.be.a.Number;
-				resultado.should.be.equal(3);
-			});
 		});
 		
 		describe('Multiplicar', function() {
