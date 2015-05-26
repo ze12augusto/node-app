@@ -150,18 +150,7 @@ describe('Calculadora', function() {
 		});
 		
 		describe('Subtrair', function() {
-			it('Deveria retornar -3 quando subtrair 1 de 4.', function() {
-				var parametros = {
-					numero1: 1,
-					numero2: 4,
-					operacao: 'subtrair'
-				};
-				
-				var resultado = controller.utils.calculos.calcular(parametros);
-				
-				resultado.should.be.a.Number;
-				resultado.should.be.equal(-3);
-			});
+		
 		});
 		
 		describe('Multiplicar', function() {
