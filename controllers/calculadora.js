@@ -37,6 +37,10 @@ module.exports = function() {
 				
 				dividir: function(numero1, numero2) {
 					return numero1 / numero2;
+				},
+				
+				exponenciacao: function(numero1, numero2) {
+					return Math.pow(numero1, numero2);
 				}
 			},
 			
@@ -81,6 +85,10 @@ module.exports = function() {
 			
 			dividir: function(request, response) {
 				response.render('dividir');
+			},
+			
+			exponenciacao: function(request, response) {
+				response.render('exponenciacao');
 			}
 		},
 		

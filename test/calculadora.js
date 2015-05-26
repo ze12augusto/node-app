@@ -169,6 +169,28 @@ describe('Calculadora', function() {
 				resultado.should.be.equal(0.25);
 			});
 		});
+		
+		describe('Exponenciação', function() {
+			it('Deveria retornar 8 quando for passado 2 e 3.', function() {
+				var numero1 = 2;
+				var numero2 = 3;
+				
+				var resultado = controller.utils.calculos.exponenciacao(numero1, numero2);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(8);
+			});
+			
+			it('Deveria retornar 0.125 quando for passado 2 e -3.', function() {
+				var numero1 = 2;
+				var numero2 = -3;
+				
+				var resultado = controller.utils.calculos.exponenciacao(numero1, numero2);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(0.125);
+			});
+		});
 	});
 	
 	describe('Testa se a função calcular funciona.', function() {
@@ -229,6 +251,21 @@ describe('Calculadora', function() {
 				
 				resultado.should.be.a.Number;
 				resultado.should.be.equal(0.25);
+			});
+		});
+		
+		describe('Exponenciação', function() {
+			it('Deveria retornar 0.125 quando elevar 2 com -3 e arredondar o valor.', function() {
+				var parametros = {
+					numero1: 2,
+					numero2: -3,
+					operacao: 'exponenciacao'
+				};
+				
+				var resultado = controller.utils.calculos.calcular(parametros);
+				
+				resultado.should.be.a.Number;
+				resultado.should.be.equal(0.125);
 			});
 		});
 	});

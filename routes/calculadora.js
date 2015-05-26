@@ -6,6 +6,7 @@ module.exports = function(app) {
 	app.get('/subtrair', controller.get.subtrair);
 	app.get('/multiplicar', controller.get.multiplicar);
 	app.get('/dividir', controller.get.dividir);
+	app.get('/exponenciacao', controller.get.exponenciacao);
 	
 	app.post('/calcular', controller.post.calcular);
 };
